@@ -25,6 +25,7 @@
 		043BF0FA27C8F3CE00F3377E /* PhotoSearchResonce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF0F927C8F3CE00F3377E /* PhotoSearchResonce.swift */; };
 		043BF0FC27C8F43C00F3377E /* PhotoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF0FB27C8F43C00F3377E /* PhotoDetail.swift */; };
 		043BF0FE27C8F56900F3377E /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF0FD27C8F56900F3377E /* ViewState.swift */; };
+		043BF10127C8F75E00F3377E /* ImageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF10027C8F75E00F3377E /* ImageUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		043BF0F927C8F3CE00F3377E /* PhotoSearchResonce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchResonce.swift; sourceTree = "<group>"; };
 		043BF0FB27C8F43C00F3377E /* PhotoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetail.swift; sourceTree = "<group>"; };
 		043BF0FD27C8F56900F3377E /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		043BF10027C8F75E00F3377E /* ImageUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		043BF0B627C8EE6200F3377E /* PhotoSearchGallary */ = {
 			isa = PBXGroup;
 			children = (
+				043BF0FF27C8F73000F3377E /* Utility */,
 				043BF0EA27C8EF3300F3377E /* Service */,
 				043BF0E927C8EF2C00F3377E /* Model */,
 				043BF0E827C8EF2600F3377E /* ViewModel */,
@@ -184,6 +187,14 @@
 				043BF0F527C8F2B900F3377E /* APIEndPoints.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		043BF0FF27C8F73000F3377E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				043BF10027C8F75E00F3377E /* ImageUtility.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +337,7 @@
 				043BF0F827C8F31600F3377E /* PhotoSearchViewModel.swift in Sources */,
 				043BF0B827C8EE6200F3377E /* AppDelegate.swift in Sources */,
 				043BF0F427C8F21700F3377E /* Request.swift in Sources */,
+				043BF10127C8F75E00F3377E /* ImageUtility.swift in Sources */,
 				043BF0BA27C8EE6200F3377E /* SceneDelegate.swift in Sources */,
 				043BF0FA27C8F3CE00F3377E /* PhotoSearchResonce.swift in Sources */,
 				043BF0F227C8F1D500F3377E /* ServiceManager.swift in Sources */,

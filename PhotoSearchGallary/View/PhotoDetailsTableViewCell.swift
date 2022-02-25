@@ -14,5 +14,10 @@ class PhotoDetailsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var imgDesc: UILabel!
     
+    func setData(_ photoDetail: PhotoDetail) {
+        imgDesc.text = photoDetail.title
+        let url = URL(string: photoDetail.url)
+       // flickImage.kf.setImage(with:url)
+    }
 
 }

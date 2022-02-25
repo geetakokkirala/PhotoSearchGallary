@@ -2,7 +2,7 @@
 //  ViewState.swift
 //  PhotoSearchGallary
 //
-//  Created by MAC on 25/02/22.
+//  Created by Geetha on 25/02/22.
 //
 
 import Foundation
