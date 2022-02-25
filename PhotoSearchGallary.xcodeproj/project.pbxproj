@@ -21,6 +21,10 @@
 		043BF0F227C8F1D500F3377E /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF0F127C8F1D500F3377E /* ServiceManager.swift */; };
 		043BF0F427C8F21700F3377E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF0F327C8F21700F3377E /* Request.swift */; };
 		043BF0F627C8F2B900F3377E /* APIEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF0F527C8F2B900F3377E /* APIEndPoints.swift */; };
+		043BF0F827C8F31600F3377E /* PhotoSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF0F727C8F31600F3377E /* PhotoSearchViewModel.swift */; };
+		043BF0FA27C8F3CE00F3377E /* PhotoSearchResonce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF0F927C8F3CE00F3377E /* PhotoSearchResonce.swift */; };
+		043BF0FC27C8F43C00F3377E /* PhotoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF0FB27C8F43C00F3377E /* PhotoDetail.swift */; };
+		043BF0FE27C8F56900F3377E /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF0FD27C8F56900F3377E /* ViewState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		043BF0F127C8F1D500F3377E /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		043BF0F327C8F21700F3377E /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		043BF0F527C8F2B900F3377E /* APIEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoints.swift; sourceTree = "<group>"; };
+		043BF0F727C8F31600F3377E /* PhotoSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchViewModel.swift; sourceTree = "<group>"; };
+		043BF0F927C8F3CE00F3377E /* PhotoSearchResonce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchResonce.swift; sourceTree = "<group>"; };
+		043BF0FB27C8F43C00F3377E /* PhotoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetail.swift; sourceTree = "<group>"; };
+		043BF0FD27C8F56900F3377E /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +154,7 @@
 				043BF0EB27C8EF5F00F3377E /* PhotoSearchViewController.swift */,
 				043BF0ED27C8F07400F3377E /* UITextField+Extension.swift */,
 				043BF0EF27C8F09B00F3377E /* PhotoDetailsTableViewCell.swift */,
+				043BF0FD27C8F56900F3377E /* ViewState.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -153,6 +162,7 @@
 		043BF0E827C8EF2600F3377E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				043BF0F727C8F31600F3377E /* PhotoSearchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -160,6 +170,8 @@
 		043BF0E927C8EF2C00F3377E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				043BF0F927C8F3CE00F3377E /* PhotoSearchResonce.swift */,
+				043BF0FB27C8F43C00F3377E /* PhotoDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -307,11 +319,15 @@
 			files = (
 				043BF0F027C8F09B00F3377E /* PhotoDetailsTableViewCell.swift in Sources */,
 				043BF0EC27C8EF5F00F3377E /* PhotoSearchViewController.swift in Sources */,
+				043BF0FE27C8F56900F3377E /* ViewState.swift in Sources */,
 				043BF0EE27C8F07400F3377E /* UITextField+Extension.swift in Sources */,
+				043BF0FC27C8F43C00F3377E /* PhotoDetail.swift in Sources */,
 				043BF0F627C8F2B900F3377E /* APIEndPoints.swift in Sources */,
+				043BF0F827C8F31600F3377E /* PhotoSearchViewModel.swift in Sources */,
 				043BF0B827C8EE6200F3377E /* AppDelegate.swift in Sources */,
 				043BF0F427C8F21700F3377E /* Request.swift in Sources */,
 				043BF0BA27C8EE6200F3377E /* SceneDelegate.swift in Sources */,
+				043BF0FA27C8F3CE00F3377E /* PhotoSearchResonce.swift in Sources */,
 				043BF0F227C8F1D500F3377E /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

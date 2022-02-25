@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 protocol Servicable {
-    func doApiCall(apiRequest:Requestable)-> Future<Data, ServiceError>
+    func doApiCall(apiRequest:Requestable)-> Future<[PhotoDetail], ServiceError>
 }
 
 class ServiceManager: Servicable {
@@ -18,7 +18,7 @@ class ServiceManager: Servicable {
         self.session = session
     }
     
-    func doApiCall(apiRequest: Requestable) -> Future<Data, ServiceError> {
+    func doApiCall(apiRequest: Requestable) -> Future<[PhotoDetail], ServiceError> {
         return Future { [weak self] promise in
             guard let request = URLRequest.getURLRequest(for: apiRequest) else {
                 promise(.failure(ServiceError.failedToCreateRequest))
@@ -31,7 +31,16 @@ class ServiceManager: Servicable {
                 guard let _data = data, error == nil else {
                     return promise(.failure(ServiceError.dataNotFound))
                 }
-                return promise(.success(_data))
+             
+                guard let decodedResponse = try? JSONDecoder().decode(PhotoSearchResonce.self, from: _data) else {
+                    return promise(.failure(ServiceError.parsingError))
+                }
+                
+               let phototsDetails = decodedResponse.photos.photo.map {
+                   PhotoDetail( title: $0.title, url: "\(APIEndPoints.imagesBaseUrl)/\($0.server)/\($0.id)_\($0.secret)_w.jpg")
+                }
+            
+                return promise(.success(phototsDetails))
             }).resume()
         }
     }
