@@ -26,6 +26,7 @@
 		043BF0FC27C8F43C00F3377E /* PhotoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF0FB27C8F43C00F3377E /* PhotoDetail.swift */; };
 		043BF0FE27C8F56900F3377E /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF0FD27C8F56900F3377E /* ViewState.swift */; };
 		043BF10127C8F75E00F3377E /* ImageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF10027C8F75E00F3377E /* ImageUtility.swift */; };
+		043BF10427C8F95D00F3377E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 043BF10327C8F95D00F3377E /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043BF10427C8F95D00F3377E /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +128,6 @@
 				043BF0E727C8EF1F00F3377E /* View */,
 				043BF0B727C8EE6200F3377E /* AppDelegate.swift */,
 				043BF0B927C8EE6200F3377E /* SceneDelegate.swift */,
-				043BF0BD27C8EE6200F3377E /* Main.storyboard */,
 				043BF0C027C8EE6400F3377E /* Assets.xcassets */,
 				043BF0C227C8EE6400F3377E /* LaunchScreen.storyboard */,
 				043BF0C527C8EE6400F3377E /* Info.plist */,
@@ -154,8 +155,8 @@
 		043BF0E727C8EF1F00F3377E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				043BF0BD27C8EE6200F3377E /* Main.storyboard */,
 				043BF0EB27C8EF5F00F3377E /* PhotoSearchViewController.swift */,
-				043BF0ED27C8F07400F3377E /* UITextField+Extension.swift */,
 				043BF0EF27C8F09B00F3377E /* PhotoDetailsTableViewCell.swift */,
 				043BF0FD27C8F56900F3377E /* ViewState.swift */,
 			);
@@ -192,6 +193,7 @@
 		043BF0FF27C8F73000F3377E /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				043BF0ED27C8F07400F3377E /* UITextField+Extension.swift */,
 				043BF10027C8F75E00F3377E /* ImageUtility.swift */,
 			);
 			path = Utility;
@@ -213,6 +215,9 @@
 			dependencies = (
 			);
 			name = PhotoSearchGallary;
+			packageProductDependencies = (
+				043BF10327C8F95D00F3377E /* Kingfisher */,
+			);
 			productName = PhotoSearchGallary;
 			productReference = 043BF0B427C8EE6200F3377E /* PhotoSearchGallary.app */;
 			productType = "com.apple.product-type.application";
@@ -285,6 +290,9 @@
 				Base,
 			);
 			mainGroup = 043BF0AB27C8EE6200F3377E;
+			packageReferences = (
+				043BF10227C8F95C00F3377E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 043BF0B527C8EE6200F3377E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -698,6 +706,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		043BF10227C8F95C00F3377E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		043BF10327C8F95D00F3377E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 043BF10227C8F95C00F3377E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 043BF0AC27C8EE6200F3377E /* Project object */;
 }
