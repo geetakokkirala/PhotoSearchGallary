@@ -27,6 +27,8 @@
 		043BF0FE27C8F56900F3377E /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF0FD27C8F56900F3377E /* ViewState.swift */; };
 		043BF10127C8F75E00F3377E /* ImageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF10027C8F75E00F3377E /* ImageUtility.swift */; };
 		043BF10427C8F95D00F3377E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 043BF10327C8F95D00F3377E /* Kingfisher */; };
+		043BF10627C8FBB500F3377E /* SearchSuccessResponce.json in Resources */ = {isa = PBXBuildFile; fileRef = 043BF10527C8FBB500F3377E /* SearchSuccessResponce.json */; };
+		043BF10827C8FBDF00F3377E /* MockServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF10727C8FBDF00F3377E /* MockServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		043BF0FB27C8F43C00F3377E /* PhotoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetail.swift; sourceTree = "<group>"; };
 		043BF0FD27C8F56900F3377E /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 		043BF10027C8F75E00F3377E /* ImageUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtility.swift; sourceTree = "<group>"; };
+		043BF10527C8FBB500F3377E /* SearchSuccessResponce.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SearchSuccessResponce.json; sourceTree = "<group>"; };
+		043BF10727C8FBDF00F3377E /* MockServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				043BF0CE27C8EE6400F3377E /* PhotoSearchGallaryTests.swift */,
+				043BF10527C8FBB500F3377E /* SearchSuccessResponce.json */,
+				043BF10727C8FBDF00F3377E /* MockServiceManager.swift */,
 			);
 			path = PhotoSearchGallaryTests;
 			sourceTree = "<group>";
@@ -319,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043BF10627C8FBB500F3377E /* SearchSuccessResponce.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				043BF0CF27C8EE6400F3377E /* PhotoSearchGallaryTests.swift in Sources */,
+				043BF10827C8FBDF00F3377E /* MockServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
