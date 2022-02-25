@@ -18,6 +18,9 @@
 		043BF0EC27C8EF5F00F3377E /* PhotoSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF0EB27C8EF5F00F3377E /* PhotoSearchViewController.swift */; };
 		043BF0EE27C8F07400F3377E /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF0ED27C8F07400F3377E /* UITextField+Extension.swift */; };
 		043BF0F027C8F09B00F3377E /* PhotoDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF0EF27C8F09B00F3377E /* PhotoDetailsTableViewCell.swift */; };
+		043BF0F227C8F1D500F3377E /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF0F127C8F1D500F3377E /* ServiceManager.swift */; };
+		043BF0F427C8F21700F3377E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF0F327C8F21700F3377E /* Request.swift */; };
+		043BF0F627C8F2B900F3377E /* APIEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BF0F527C8F2B900F3377E /* APIEndPoints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		043BF0EB27C8EF5F00F3377E /* PhotoSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchViewController.swift; sourceTree = "<group>"; };
 		043BF0ED27C8F07400F3377E /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		043BF0EF27C8F09B00F3377E /* PhotoDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		043BF0F127C8F1D500F3377E /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		043BF0F327C8F21700F3377E /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		043BF0F527C8F2B900F3377E /* APIEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,9 @@
 		043BF0EA27C8EF3300F3377E /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				043BF0F127C8F1D500F3377E /* ServiceManager.swift */,
+				043BF0F327C8F21700F3377E /* Request.swift */,
+				043BF0F527C8F2B900F3377E /* APIEndPoints.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -299,8 +308,11 @@
 				043BF0F027C8F09B00F3377E /* PhotoDetailsTableViewCell.swift in Sources */,
 				043BF0EC27C8EF5F00F3377E /* PhotoSearchViewController.swift in Sources */,
 				043BF0EE27C8F07400F3377E /* UITextField+Extension.swift in Sources */,
+				043BF0F627C8F2B900F3377E /* APIEndPoints.swift in Sources */,
 				043BF0B827C8EE6200F3377E /* AppDelegate.swift in Sources */,
+				043BF0F427C8F21700F3377E /* Request.swift in Sources */,
 				043BF0BA27C8EE6200F3377E /* SceneDelegate.swift in Sources */,
+				043BF0F227C8F1D500F3377E /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
