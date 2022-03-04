@@ -10,11 +10,11 @@ import Combine
 
 class PhotoSearchViewController: UIViewController {
 
-    @IBOutlet weak var searchTextField: UITextField!
-    @IBOutlet weak var galleryTableView: UITableView!
+    @IBOutlet private weak var searchTextField: UITextField!
+     @IBOutlet private weak var galleryTableView: UITableView!
     private var bindings = Set<AnyCancellable>()
     
-    let viewModel:PhotoSearchViewModelType = PhotoSearchViewModel(serviceManager: ServiceManager())
+    private let viewModel:PhotoSearchViewModelType = PhotoSearchViewModel(serviceManager: ServiceManager())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,8 +53,11 @@ class PhotoSearchViewController: UIViewController {
         case .finishedLoading:
             galleryTableView.isHidden = false
             galleryTableView.reloadData()
+            searchTextField.resignFirstResponder()
         case .error(let error):
             galleryTableView.reloadData()
+            searchTextField.resignFirstResponder()
+
         }
     }
 
