@@ -20,3 +20,6 @@
 5. MVVM
 
 
+# 3rd party Frameworks used 
+
+ 1. KingFisher :  this is used for Asynchronous image downloading and caching.  
